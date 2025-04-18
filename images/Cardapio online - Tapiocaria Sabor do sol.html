@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<!-- saved from url=(0032)http://127.0.0.1:5500/index.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta http-equiv="x-UA-Compatible" content="IE=edge">
+    <title>Cardapio online - Tapiocaria Sabor do sol</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./Cardapio online - Tapiocaria Sabor do sol_files/main.css">
+    
+
+</head>
+
+<body>
+    <header class="banner">
+        <h1>Tapiocaria Sabor de Sol</h1>
+        <p>As melhores tapiocas da região sul, com igredientes frescos e sabor inigualavél</p>
+        <nav>
+            <a href="http://127.0.0.1:5500/index.html#tapiocas">Tapiocas</a>
+            <a href="http://127.0.0.1:5500/index.html#bebidas">Bebidas</a>
+            <a href="http://127.0.0.1:5500/index.html#pedido">Pedido</a>
+            <a href="http://127.0.0.1:5500/Contato">Contato</a>
+        </nav>
+        
+    </header>
+
+    <main>
+        <section id="tapiocas" class="categoria">
+            <h2>Tapiocas</h2>
+            <div class="produto">
+                <img src="./Cardapio online - Tapiocaria Sabor do sol_files/tapioca-frango.jpg" alt="Tapioca de frango">
+                <h3>Tapioca de Frango</h3>
+                <p>Frango desfiado, Requeijão, Tomate e orégano</p>
+                <span class="preco">R$ 15,00</span>
+                <button class="adicionar">Adicionar</button>
+
+            </div>
+
+            <div class="produto">
+                <img src="./Cardapio online - Tapiocaria Sabor do sol_files/tapioca-carne.jpeg" alt="Tapioca de frango">
+                <h3>Tapioca de carne</h3>
+                <p>Carne</p>
+                <span class="preco">R$ 14,00</span>
+                <button class="adicionar">Adicionar</button>
+
+            </div>
+
+            <div class="produto">
+                <img src="./Cardapio online - Tapiocaria Sabor do sol_files/tapioca-chocolate.jpeg" alt="Tapioca de frango">
+                <h3>Tapioca de Chocolate</h3>
+                <p>Chocolate, leite condensado, nutela</p>
+                <span class="preco">R$ 25,00</span>
+                <button class="adicionar">Adicionar</button>
+
+            </div>
+
+            <div class="produto">
+                <img src="./Cardapio online - Tapiocaria Sabor do sol_files/tapioca-docedeleite.jpeg" alt="Tapioca de frango">
+                <h3>Tapioca de Doce de Leite</h3>
+                <p>Doce de Leite</p>
+                <span class="preco">R$ 11,00</span>
+                <button class="adicionar">Adicionar</button>
+
+            </div>
+
+            <div class="produto">
+                <img src="./Cardapio online - Tapiocaria Sabor do sol_files/tapioca-presuntoequijo.jpeg" alt="Tapioca de frango">
+                <h3>Tapioca de presunto e queijo</h3>
+                <p>Presunto e queijo, Requeijão, Tomate e orégano</p>
+                <span class="preco">R$ 18,00</span>
+                <button class="adicionar">Adicionar</button>
+
+            </div>
+        </section>
+        <section id="bebidas" class=" categoria">
+
+            <h2>Bebidas</h2>
+            <div class="bebida">
+                <img src="./Cardapio online - Tapiocaria Sabor do sol_files/coca.jpg" alt="refrigerante coca-cola">
+                <h3>refrigerante coca-cola</h3>
+                <span class="preco">5,00</span>
+            </div>
+    </section>
+    <section id="bebidas" class=" categoria">
+        <div class="bebida">
+            <img src="./Cardapio online - Tapiocaria Sabor do sol_files/guarana antartica.jpg" alt="refrigerante guarana antartica">
+            <h3>refrigerante guarana antartica</h3>
+            <span class="preco">4,25</span>
+        </div>
+        
+            <section id="pedido"></section>
+        <section id="contato"></section>
+    </section></main>
+
+
+
+    <footer>
+    <p>©2025 todos os direitos reservados</p>
+    </footer>
+
+    <script src="./Cardapio online - Tapiocaria Sabor do sol_files/main.js.baixados"></script>
+
+<!-- Code injected by live-server -->
+<script type="text/javascript">
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+</body></html>

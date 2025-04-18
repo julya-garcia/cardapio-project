@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hahachi's Restaurante</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="banner">
+        <div class="banner-content"> 
+            <h1>Hahachi's Restaurante</h1>
+            <p>A melhor comida japonesa da cidade</p>
+            <nav>
+                <a href="#comida japonesa">Comida japonesa</a>
+                <a href="#bebidas">Bebidas</a>
+                <a href="#pedido">Pedido</a>
+                <a href="#contato">Contato</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="tapiocas" class="categoria">
+            <h2>Comidas</h2>
+            <div class="produto">
+                <img src="/images/sushi.jpg" alt="Sushi">
+                <h3>Sushi</h3>
+                <p>Sushi fresco e saboroso</p>
+                <span class="preco">R$ 50,00</span>
+                <button class="adicionar">Adicionar</button>
+            </div>
+
+            <div class="produto">
+                <img src="/images/temak.jpg" alt="Temaki">
+                <h3>Temaki</h3>
+                <p>Temaki é uma boa opção para uma refeição rápida</p>
+                <span class="preco">R$ 21,00</span>
+                <button class="adicionar">Adicionar</button>
+            </div>
+
+            <div class="produto">
+                <img src="/images/yakisoba.jpg" alt="Yakisoba">
+                <h3>Yakisoba</h3>
+                <p>Um prato rico em sabores, aromas e texturas</p>
+                <span class="preco">R$ 26,00</span>
+                <button class="adicionar">Adicionar</button>
+            </div>
+
+            <div class="produto">
+                <img src="/images/gohan.jpg" alt="Gohan">
+                <h3>Gohan</h3>
+                <p>O sabor é bem neutro</p>
+                <span class="preco">R$ 22,00</span>
+                <button class="adicionar">Adicionar</button>
+            </div>
+
+            <div class="produto">
+                <img src="/images/porção.jpg" alt="Porcao">
+                <h3>Porção</h3>
+                <p>Variações de sushi</p>
+                <span class="preco">R$ 67,00</span>
+                <button class="adicionar">Adicionar</button>
+            </div>
+        </section>
+
+        <section id="bebidas" class="categoria">
+            <h2>Bebidas</h2>
+            <div class="produto">
+                <img src="/images/coca.jpg" alt="Coca cola">
+                <h3>Coca cola</h3>
+                <p>Coca cola lata geladinha</p>
+                <span class="preco">R$ 5,00</span>
+                <button class="adicionar">Adicionar</button>
+            </div>
+
+            <div class="produto">
+                <img src="/images/sucodelaranja.jpg" alt="Suco de laranja">
+                <h3>Suco de Laranja</h3>
+                <p>Suco de laranja natural</p>
+                <span class="preco">R$ 7,00</span>
+                <button class="adicionar">Adicionar</button>
+            </div>
+
+            <div class="produto">
+                <img src="images/soju.jpg" alt="Soju">
+                <h3>Soju</h3>
+                <p>Soju geladinha</p>
+                <span class="preco">R$ 46,00</span>
+                <button class="adicionar">Adicionar</button>
+            </div>
+        </section>
+        <section id="pedido">
+            <h2>Seu pedido</h2>
+            <ul id="lista-pedido">
+
+            </ul>
+            <p id="total">Total: R$ 0,00</p>
+            <button id="finalizar-pedido">Finalizar pedido</button>
